@@ -36,27 +36,29 @@
             // listBoxAvailable
             // 
             this.listBoxAvailable.FormattingEnabled = true;
-            this.listBoxAvailable.Location = new System.Drawing.Point(108, 121);
+            this.listBoxAvailable.Location = new System.Drawing.Point(41, 121);
             this.listBoxAvailable.Name = "listBoxAvailable";
-            this.listBoxAvailable.Size = new System.Drawing.Size(120, 95);
+            this.listBoxAvailable.Size = new System.Drawing.Size(296, 95);
             this.listBoxAvailable.TabIndex = 0;
+            this.listBoxAvailable.Click += new System.EventHandler(this.listBoxAvailable_Click);
             // 
             // listBoxBookings
             // 
             this.listBoxBookings.FormattingEnabled = true;
-            this.listBoxBookings.Location = new System.Drawing.Point(578, 121);
+            this.listBoxBookings.Location = new System.Drawing.Point(442, 121);
             this.listBoxBookings.Name = "listBoxBookings";
-            this.listBoxBookings.Size = new System.Drawing.Size(120, 95);
+            this.listBoxBookings.Size = new System.Drawing.Size(296, 95);
             this.listBoxBookings.TabIndex = 1;
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(359, 250);
+            this.btnCheck.Location = new System.Drawing.Point(338, 266);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.Size = new System.Drawing.Size(110, 53);
             this.btnCheck.TabIndex = 2;
             this.btnCheck.Text = "Проверка";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click_1);
             // 
             // MainForm
             // 
@@ -68,6 +70,7 @@
             this.Controls.Add(this.listBoxAvailable);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }

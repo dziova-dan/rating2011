@@ -37,4 +37,6 @@ namespace rating2011
             return $"{Eq.Type} {Eq.Brand} | Прораб: {ForemanName} | До: {DateTo:dd.MM.yyyy}";
         }
     }
+
+
 }
